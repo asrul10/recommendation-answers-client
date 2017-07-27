@@ -5,10 +5,10 @@
     <div class="ui form">
       <div class="field">
         <textarea [(ngModel)]="newQuestion"></textarea>
+        <p style="padding: 10px 0;">* Minimum 100 Character </p>
       </div>
     </div>
-    <br>
-    <button class="ui button light" (click)="getRecommendation($event)">Get Recommendation</button>
+    <button class="ui button disabled light" [ngClass]="{'disabled': newQuestion.length <= 100}" (click)="getRecommendation($event)">Get Recommendation</button>
   </div>
 </div>
 <div class="ui centered card card-demo" *ngIf="recommendation">
