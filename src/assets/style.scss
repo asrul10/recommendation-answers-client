@@ -1,0 +1,43 @@
+$main-color: #51A281;
+$sub-color: #53675F;
+$light-color: #4ec596;
+
+.ui {
+  &.secondary {
+    &.pointing {
+      &.aa-menu {
+        border: 0;
+      }
+      &.menu {
+        a.item {
+          border: 0;
+        }
+      }
+    }
+  }
+  &.primary {
+    &.button {
+      background-color: $sub-color;
+      &:hover {
+        background-color: #3E4D47;
+      }
+    }
+  }
+  &.light {
+    &.button {
+      background-color: $light-color;
+      color: #fff;
+      &:hover {
+        background-color: #3fad82;
+      }
+    }
+  }
+  &.header-image {
+    margin-top: 6.3em;
+  }
+  &.vertical {
+    &.segment {
+      border: 0;
+    }
+  }
+}

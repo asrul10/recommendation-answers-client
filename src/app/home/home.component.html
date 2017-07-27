@@ -1,0 +1,108 @@
+<!-- Following Menu -->
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <a class="item" href="#home">Home</a>
+    <a class="item" href="#about">About</a>
+    <a class="item" href="#demo">Demo</a>
+    <a class="item" href="#usage">Usage</a>
+    <a class="item" href="#join">Join</a>
+  </div>
+</div>
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment" id="home">
+    <div class="ui container">
+      <div class="ui large secondary aa-menu inverted pointing menu">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+        <a class="item" href="#home">Home</a>
+        <a class="item" href="#about">About</a>
+        <a class="item" href="demo">Demo</a>
+        <a class="item" href="usage">Usage</a>
+        <a class="item" href="join">Join</a>
+      </div>
+    </div>
+
+    <div class="ui text container">
+      <img class="ui header-image" src="assets/images/formspring-spiral-logo.png" alt="Auto Answering Logo">
+      <h1 class="ui inverted header">
+        Auto Answering
+      </h1>
+      <h2>Ask whatever you want when you want to.</h2>
+      <a href="#demo" class="ui huge primary button">Demo <i class="right arrow icon"></i></a>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe segment" id="about">
+    <div class="ui middle center aligned stackable grid container">
+      <div class="row">
+        <div class="wide column">
+          <h1>What is Auto Answering?</h1>
+          <p>Auto Answering is platform that help get recommendation from any answer, this recommendation based on already data
+            question and answer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe segment" id="demo">
+    <div class="ui aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h1>Demo</h1>
+          <p>This demo based on data <a href="https://android.stackexchange.com">android.stackexchange.com</a>, which is the
+            demo can give recommendation about android or smartphone. The data from stackexchange can be downloaded <a href="https://archive.org/details/stackexchange">here</a>.</p>
+        </div>
+        <div class="eight wide column">
+          <app-question></app-question>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe segment" id="usage">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="wide column">
+          <h1>API Usage</h1>
+          <p>Get recommendation</p>
+          <div class="ui ignored message">
+            <code>[POST] http://yoursubdomain.autoanswer.net/getRecommendation</code>
+          </div>
+          <p>Type Post</p>
+          <div class="ui ignored message">
+            <code>Body - RAW &#123;"question": "Your question goes here"&#125;</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe segment" id="join">
+    <div class="ui middle center aligned stackable grid container">
+      <div class="row">
+        <div class="wide column">
+          <h1>Get my recommendation answer!</h1>
+          <form class="ui form" style="margin-top: 30px">
+            <div class="field">
+              <input type="email" name="email" placeholder="Email" style="width: 350px">
+            </div>
+            <button type="button" class="ui light button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="wide column">
+          Copyright © 2017 Auto Answering
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

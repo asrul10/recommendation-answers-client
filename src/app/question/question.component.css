@@ -1,0 +1,12 @@
+.ui.card-demo {
+  width: 700px;
+}
+.answer {
+  padding-left: 20px;
+}
+.hide {
+  display: none;
+}
+.ui.items>.item {
+  font-size: 1.15em;
+}

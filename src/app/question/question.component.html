@@ -1,0 +1,33 @@
+<div class="ui centered card card-demo">
+  <div class="content">
+    <div class="header">Question</div>
+    <br>
+    <div class="ui form">
+      <div class="field">
+        <textarea [(ngModel)]="newQuestion"></textarea>
+      </div>
+    </div>
+    <br>
+    <button class="ui button light" (click)="getRecommendation($event)">Get Recommendation</button>
+  </div>
+</div>
+<div class="ui centered card card-demo" *ngIf="recommendation">
+  <div class="content">
+    <div class="header">Recommendation</div>
+    <div class="ui items">
+      <div class="item" *ngFor="let question of recommendation">
+        <div class="content">
+          <div class="description">
+            <p>{{question.question}}</p>
+          </div>
+          <div class="extra">
+            <a href="/" (click)="showAnswer($event, question.id)" *ngIf="question.answer != 'Belum terjawab'"  >Show Answer</a>
+          </div>
+          <div class="description hide answer-content-{{question.id}}">
+            <p class="answer">{{question.answer}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
