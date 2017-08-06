@@ -21,7 +21,8 @@
             <p>{{question.question}}</p>
           </div>
           <div class="extra">
-            <a href="/" (click)="showAnswer($event, question.id)" *ngIf="question.answer != 'Belum terjawab'"  >Show Answer</a>
+            <a href="/" (click)="showAnswer($event, question.id)" *ngIf="question.answer != 'Belum terjawab'"><i class="comment icon"></i>Show Answer</a>
+            <a href="https://android.stackexchange.com/questions/{{question.id}}"><i class="linkify icon"></i>android.stackexchange.com</a>
           </div>
           <div class="description hide answer-content-{{question.id}}">
             <p class="answer">{{question.answer}}</p>
